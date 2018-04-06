@@ -7,6 +7,9 @@ She wanted to become a scuba diver, but unfortunately her fire did not mesh well
 Hannah decided that she would have to build a custom scuba suit, lined with python skin, but that didn't turn out that well.
 She instead decided to learn to code. She heard of this class called PS51 at Yale University. 
 
-^^ The above is what I currently see
+
+She got super excited! Apparently there were these great TA's named Tannah and Him. They always promised pizza in 
+class on Friday but somehow always forgot to bring it. However, their teaching abilities were on fleek and in no 
+time Hannah was up and coding in her dragonly ways.
 
 '''
