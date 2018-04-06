@@ -7,4 +7,6 @@ She wanted to become a scuba diver, but unfortunately her fire did not mesh well
 Hannah decided that she would have to build a custom scuba suit, lined with python skin, but that didn't turn out that well.
 She instead decided to learn to code. She heard of this class called PS51 at Yale University. 
 
+^^ The above is what I currently see
+
 '''
