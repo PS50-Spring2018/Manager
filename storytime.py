@@ -14,4 +14,8 @@ Maybe that was where she could learn to bend python to her will?
 It quickly became clear that the skins involved in python coding couldn't be used to line a scuba suit, but Hannah didn't care.
 She had more immediate problems.  Coding was great, but typing with talons was very v e r y slow.
 
+She got super excited! Apparently there were these great TA's named Tannah and Him. They always promised pizza in 
+class on Friday but somehow always forgot to bring it. However, their teaching abilities were on fleek and in no 
+time Hannah was up and coding in her dragonly ways.
+
 '''
