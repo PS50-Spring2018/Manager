@@ -2,8 +2,7 @@
 Use this space to collaboratively write a short story with your team.
 After every few sentences, push your changes to the remote repository and resolve conflicts.
 
-YOUR STORY HERE
 
-There once was a girl. Her name was Hannah. 
-
+=======
+Once upon a time, there was a dragon. Her name was Hannah
 '''
