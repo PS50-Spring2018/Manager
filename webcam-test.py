@@ -50,11 +50,11 @@ def snap(n=0):
 if __name__=='__main__':
 
 	# #Uncomment to stream webcam video
-	#stream()
+	# stream()
 
 	# #Uncomment to take single snap
-	#s = snap()
-	#print(s)
+	s = snap()
+	print(s)
 
 
 
