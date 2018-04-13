@@ -1,4 +1,7 @@
 for #everytime there's a new 
+
+# I think this function isn't part of the image class, so should go in a separate file.
+#if it is part of the image class, then it needs to be nested within.
 function getRed
 
 
