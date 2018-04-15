@@ -3,6 +3,7 @@
 # Import opencv
 import cv2
 import time
+import dropbox
 
 # Function for displaying continuous video stream
 # n: Camera number on computer (usually n=0 for built-in webcam)
@@ -50,11 +51,12 @@ def snap(n=0):
 if __name__=='__main__':
 
 	# #Uncomment to stream webcam video
-	#stream()
+	# stream()
 
 	# #Uncomment to take single snap
-	#s = snap()
-	#print(s)
+	s = snap()
+	print(s)
+
 
 
 
