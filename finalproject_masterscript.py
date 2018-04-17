@@ -48,6 +48,7 @@ from constructorfunctions import getmeanRed, getmeanGreen, getmeanBlue
 from constructorfunctions import getvarianceRed, getvarianceGreen, getvarianceBlue
 
 #create an Image object for each image file downloaded from Dropbox
+imagelist = []
 for file in whateverfolderitis:
 	#open file
 	f = open(filename,'r')
@@ -70,12 +71,12 @@ for file in whateverfolderitis:
 	uniqueimagenamesomehow = Image(red, green, blue, meanred, meangreen, meanblue, variancered, variancegreen, varianceblue)
 	#close file
 	f.close()
+	# append image object to list of images
+	imagelist.append(uniqueimagenamesomehow)
 
-
-# append image object to an experiment object, which is a list of images
 	#so we need to make an experiment class as well - are we still doing this?
 from experimentclassfilethatdoesnotyetexist import Experiment 
-experimentname = Experiment(inputs)
+experimentnamesomehowwhatdowewanttocallthis = Experiment(imagelist)
 
 
 
@@ -90,6 +91,4 @@ from group3filename import whateveritis, whatever2, whatever3
 #check if dropbox is full - where should this go? Particularly w/ updating in real time, want to make sure that this doesn’t become an issue...
 	#call size attribute for each object
 	#look at total sum of all of those?
-
-install
 
