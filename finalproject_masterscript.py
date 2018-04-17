@@ -51,9 +51,15 @@ from constructorfunctions import getvarianceRed, getvarianceGreen, getvarianceBl
 #create an Image object for each image file downloaded from Dropbox
 for file in whateverfolderitis:
 	#open file
+	f= open(filename,'r')
+	
+	#line = f.readline() 
+
 	#read necessary components of file to get inputs for image class
 	#create instance of Image
 	uniqueimagenamesomehow = Image(inputssomehowthatweread?)
+	#close file
+	f.close()
 
 
 # append image object to an experiment object, which is a list of images
