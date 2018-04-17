@@ -45,6 +45,7 @@ for i in range(0,total_images):
 from constructor import Image
 #next import functions
 from constructorfunctions import *
+
 #create an Image object for each image file downloaded from Dropbox
 imagelist = []
 for file in whateverfolderitis:
@@ -72,8 +73,8 @@ for file in whateverfolderitis:
 	# append image object to list of images
 	imagelist.append(uniqueimagenamesomehow)
 
-	#so we need to make an experiment class as well - are we still doing this?
-from experimentclassfilethatdoesnotyetexist import Experiment 
+#pool images into an experiment object: this will have the inputs for the analysis function as attributes
+from experimentclass import Experiment 
 experimentnamesomehowwhatdowewanttocallthis = Experiment(imagelist)
 
 
