@@ -41,15 +41,15 @@ for i in range(0,total_images):
 
 	#repeat!
 
-
-#create object (of class image) for each image file
-	#first import the class - currently called "constructor", may want to rename for clarity
+#Import image class - file currently called "constructor", may want to rename for clarity
 from constructor import Image
-	#next import functions
+	#next import functions - do we actually not need these then?
 from constructorfunctions import getmeanRed, getmeanGreen, getmeanBlue
 from constructorfunctions import getvarianceRed, getvarianceGreen, getvarianceBlue
 	#how to name the object? same as file?
 #imagename = Image(inputs)
+
+#create an Image object for each image file downloaded from Dropbox
 
 
 
