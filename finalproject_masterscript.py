@@ -15,7 +15,6 @@ import os
 # Then select SublimeREPL. It will install it automatically.
 # To use it go to Tools>sublimerepl>python>python-RUNcurrentfile - this will run the script in a new tab, but with user input
 
-
 #ask for user input of how often to take images, how many total images
 rate = input('How often (in images/minute) should an image be captured?')
 print(rate)
@@ -34,7 +33,7 @@ for i in range(0,total_images):
 	snap()		#output of this function is a file saved to dropbox, yes?
 
 	#go ahead and download this from dropbox
-	getImageraw()		#where does this save to? need to know in order to implement Image class
+	getImageraw()			#where does this save to? need to know in order to implement Image class
 	getImagecontourdata()	#same question as above
 
 	#wait the appropriate amount of time before taking the next image
