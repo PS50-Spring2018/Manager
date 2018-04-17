@@ -23,7 +23,7 @@ print(total_images)
 
 #pass those numbers as input to group 1 function to initialize camera/collect image/save to dropbox
 	# first import the function
-from CameraOps.py import stream, snap
+from CameraOps import stream, snap
 stream()
 for i in range(0,total_images):
 	#take image
@@ -33,6 +33,8 @@ for i in range(0,total_images):
 	#repeat!
 
 
+#import Dropbox functions
+from constructorfunctions import getImageraw, getImagecontourdata
 
 #detect when there’s a new file in dropbox
 	#function saved in another file, Nicole is writing
@@ -46,6 +48,9 @@ from nicolefilename import droboxdatafxn
 #create object (of class image) for each image file
 	#first import the class - currently called "constructor", may want to rename for clarity
 from constructor import Image
+	#next import functions
+from constructorfunctions import getmeanRed, getmeanGreen, getmeanBlue
+from constructorfunctions import getvarianceRed, getvarianceGreen, getvarianceBlue
 	#how to name the object? same as file?
 imagename = Image(inputs)
 
