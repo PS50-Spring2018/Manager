@@ -21,28 +21,25 @@ print(rate)
 total_images = input('How many images would you like to capture in total?')
 print(total_images)
 
-#pass those numbers as input to group 1 function to initialize camera/collect image/save to dropbox
-	# first import the function
+#import Dropbox functions
+from constructorfunctions import getImageraw, getImagecontourdata
+#import camera controls
 from CameraOps import stream, snap
+
+#pass user input to group 1 function to initialize camera/collect image/save to dropbox
 stream()
 for i in range(0,total_images):
 	#take image
 	snap()		#output of this function is a file saved to dropbox, yes?
+
+	#go ahead and download this from dropbox
+	getImageraw()
+	getImagecontourdata()
+
 	#wait the appropriate amount of time before taking the next image
 	time.sleep(60/rate)
+
 	#repeat!
-
-
-#import Dropbox functions
-from constructorfunctions import getImageraw, getImagecontourdata
-
-#detect when there’s a new file in dropbox
-	#function saved in another file, Nicole is writing
-
-#pull data from dropbox
-	#function saved in another file, Nicole is writing
-from nicolefilename import droboxdatafxn
-
 
 
 #create object (of class image) for each image file
