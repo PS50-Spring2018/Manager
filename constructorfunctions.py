@@ -1,5 +1,4 @@
-f= open(filename,'r')
-# line = f.readline() 
+
 def getmeanRed():
 # have a time-step loop 
  # have an if clause that checks if there's a new file uploaded

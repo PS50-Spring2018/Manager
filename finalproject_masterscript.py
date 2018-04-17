@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import time
 import csv 
 import cv2
+import os
 
 #Important note: Sublime text doesn't support user input so below are instructions that install some packages that allow for user input function
 # in Sublime press ctrl + shift + P (linux command in ST for 'goto anything').
@@ -46,18 +47,28 @@ from constructor import Image
 	#next import functions - do we actually not need these then?
 from constructorfunctions import getmeanRed, getmeanGreen, getmeanBlue
 from constructorfunctions import getvarianceRed, getvarianceGreen, getvarianceBlue
-#imagename = Image(inputs)
 
 #create an Image object for each image file downloaded from Dropbox
 for file in whateverfolderitis:
 	#open file
-	f= open(filename,'r')
-	
-	#line = f.readline() 
+	f = open(filename,'r')
 
-	#read necessary components of file to get inputs for image class
+	#read whatever line it is that has the values we want: FIX THIS
+	line = f.readline() 
+
+	#read necessary components of file to get inputs for image class: FIX THIS
+	red = 
+	green = 
+	blue = 
+	meanred = getmeanRed()
+	meangreen = getmeanGreen()
+	meanblue = getmeanBlue()
+	variancered = getvarianceRed()
+	variancegreen = getvarianceGreen()
+	varianceblue = getvarianceBlue()
+
 	#create instance of Image
-	uniqueimagenamesomehow = Image(inputssomehowthatweread?)
+	uniqueimagenamesomehow = Image(red, green, blue, meanred, meangreen, meanblue, variancered, variancegreen, varianceblue)
 	#close file
 	f.close()
 
