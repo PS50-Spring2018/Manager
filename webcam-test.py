@@ -55,7 +55,7 @@ if __name__=='__main__':
 
 	# #Uncomment to take single snap
 	s = snap()
-	print(s)
+	np.save('sample snap.npy', s)
 
 
 
