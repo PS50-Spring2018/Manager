@@ -24,8 +24,13 @@ print(total_images)
 #pass those numbers as input to group 1 function to initialize camera/collect image/save to dropbox
 	# first import the function
 from CameraOps.py import stream, snap
-	#what inputs does that function take?
-	#output = a file saved to dropbox, yes?
+stream()
+for i in range(0,total_images):
+	#take image
+	snap()		#output of this function is a file saved to dropbox, yes?
+	#wait the appropriate amount of time before taking the next image
+	time.sleep(60/rate)
+	#repeat!
 
 #detect when there’s a new file in dropbox
 	#function saved in another file, Nicole is writing
