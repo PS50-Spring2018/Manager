@@ -1,7 +1,7 @@
 # import libraries needed
 import numpy as np 
 import scipy as sp
-import seaborn as sb 
+import seaborn as sns 
 import matplotlib.pyplot as plt
 import csv 
 
