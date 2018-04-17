@@ -32,6 +32,8 @@ for i in range(0,total_images):
 	time.sleep(60/rate)
 	#repeat!
 
+
+
 #detect when there’s a new file in dropbox
 	#function saved in another file, Nicole is writing
 
@@ -39,16 +41,22 @@ for i in range(0,total_images):
 	#function saved in another file, Nicole is writing
 from nicolefilename import droboxdatafxn
 
+
+
 #create object (of class image) for each image file
 	#first import the class - currently called "constructor", may want to rename for clarity
 from constructor import Image
 	#how to name the object? same as file?
 imagename = Image(inputs)
 
+
+
 # append image object to an experiment object, which is a list of images
 	#so we need to make an experiment class as well - are we still doing this?
 from experimentclassfile import Experiment 
 experimentname = Experiment(inputs)
+
+
 
 #call group 3 analysis functions on experiment object - what inputs are they using specifically/what's their syntax?
 	#first import their function
