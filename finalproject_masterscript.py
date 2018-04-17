@@ -43,10 +43,8 @@ for i in range(0,total_images):
 
 #Import image class - file currently called "constructor", may want to rename for clarity
 from constructor import Image
-	#next import functions - do we actually not need these then?
-from constructorfunctions import getmeanRed, getmeanGreen, getmeanBlue
-from constructorfunctions import getvarianceRed, getvarianceGreen, getvarianceBlue
-
+#next import functions
+from constructorfunctions import *
 #create an Image object for each image file downloaded from Dropbox
 imagelist = []
 for file in whateverfolderitis:
