@@ -52,7 +52,7 @@ from constructor import Image
 from constructorfunctions import getmeanRed, getmeanGreen, getmeanBlue
 from constructorfunctions import getvarianceRed, getvarianceGreen, getvarianceBlue
 	#how to name the object? same as file?
-imagename = Image(inputs)
+#imagename = Image(inputs)
 
 
 
@@ -74,3 +74,6 @@ from group3filename import whateveritis, whatever2, whatever3
 #check if dropbox is full - where should this go? Particularly w/ updating in real time, want to make sure that this doesn’t become an issue...
 	#call size attribute for each object
 	#look at total sum of all of those?
+
+install
+
