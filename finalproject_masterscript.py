@@ -33,8 +33,8 @@ for i in range(0,total_images):
 	snap()		#output of this function is a file saved to dropbox, yes?
 
 	#go ahead and download this from dropbox
-	getImageraw()
-	getImagecontourdata()
+	getImageraw()		#where does this save to? need to know in order to implement Image class
+	getImagecontourdata()	#same question as above
 
 	#wait the appropriate amount of time before taking the next image
 	time.sleep(60/rate)
@@ -46,11 +46,14 @@ from constructor import Image
 	#next import functions - do we actually not need these then?
 from constructorfunctions import getmeanRed, getmeanGreen, getmeanBlue
 from constructorfunctions import getvarianceRed, getvarianceGreen, getvarianceBlue
-	#how to name the object? same as file?
 #imagename = Image(inputs)
 
 #create an Image object for each image file downloaded from Dropbox
-
+for file in whateverfolderitis:
+	#open file
+	#read necessary components of file to get inputs for image class
+	#create instance of Image
+	uniqueimagenamesomehow = Image(inputssomehowthatweread?)
 
 
 # append image object to an experiment object, which is a list of images
