@@ -58,7 +58,7 @@ for file in whateverfolderitis:
 
 # append image object to an experiment object, which is a list of images
 	#so we need to make an experiment class as well - are we still doing this?
-from experimentclassfile import Experiment 
+from experimentclassfilethatdoesnotyetexist import Experiment 
 experimentname = Experiment(inputs)
 
 
