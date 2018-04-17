@@ -3,7 +3,9 @@ import numpy as np
 import scipy as sp
 import seaborn as sns 
 import matplotlib.pyplot as plt
+import time
 import csv 
+import cv2
 
 #Important note: Sublime text doesn't support user input so below are instructions that install some packages that allow for user input function
 # in Sublime press ctrl + shift + P (linux command in ST for 'goto anything').
@@ -21,7 +23,7 @@ print(total_images)
 
 #pass those numbers as input to group 1 function to initialize camera/collect image/save to dropbox
 	# first import the function
-from group1filename import whatevertheycallthefxn
+from CameraOps.py import stream, snap
 	#what inputs does that function take?
 	#output = a file saved to dropbox, yes?
 
