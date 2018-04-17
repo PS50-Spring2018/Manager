@@ -5,9 +5,19 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import csv 
 
+#Important note: Sublime text doesn't support user input so below are instructions that install some packages that allow for user input function
+# in Sublime press ctrl + shift + P (linux command in ST for 'goto anything').
+# Type in 'install',
+# click on 'sublime package control: install package'.
+# Then select SublimeREPL. It will install it automatically.
+# To use it go to Tools>sublimerepl>python>python-RUNcurrentfile - this will run the script in a new tab, but with user input
+
+
 #ask for user input of how often to take images, how many total images
-rate = int(input('How often (in images/minute) should an image be captured?'))
-total = int(input('How many images would you like to capture in total?'))
+rate = input('How often (in images/minute) should an image be captured?')
+print(rate)
+total_images = input('How many images would you like to capture in total?')
+print(total_images)
 
 #pass those numbers as input to group 1 function to initialize camera/collect image/save to dropbox
 	# first import the function
