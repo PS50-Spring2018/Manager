@@ -36,7 +36,6 @@ for i in range(0,total_images):
 	snap()		#output of this function is a file saved to dropbox, yes?
 
 	#go ahead and download this from dropbox
-	filecheck()
 	getImageraw()			#where does this save to? need to know in order to implement Image class
 	getImagecontourdata()	#same question as above
 

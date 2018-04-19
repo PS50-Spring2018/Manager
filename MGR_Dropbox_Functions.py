@@ -13,25 +13,23 @@ import glob
 import numpy as np
 
 # still need to figure out specifics for when this isn't being used on my (Nicole's) computer
+def changedirectory():
+	path = '/Users/nicolekim/Dropbox'
 
-path = '/Users/nicolekim/Dropbox'
+	dirpath = os.getcwd()
+	print("Current working directory %s" % dirpath)
 
-dirpath = os.getcwd()
-print("Current working directory %s" % dirpath)
+	os.chdir(path)
+	# Check current working directory.
+	dirpath = os.getcwd()
 
-os.chdir(path)
-# Check current working directory.
-dirpath = os.getcwd()
+	print("Directory changed successfully %s" % dirpath)
 
-print("Directory changed successfully %s" % dirpath)
+	csvname = 'summary.csv' 
+	csvpath = os.path.join(dirpath, csvname)
 
-csvname = 'summary.csv' 
-csvpath = os.path.join(dirpath, csvname)
-
-
-
-## Function: Check dropbox for new image files and if yes, download new images files and redownload CSV
-
+##
+ Function: Check dropbox for new image files and if yes, download new images files and redownload CSV
 
 # The timestamp of the last image detected by the Master script (type = integer)
 last_image = 20180410175529 # test sample
