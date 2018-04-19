@@ -28,8 +28,7 @@ def changedirectory():
 	csvname = 'summary.csv' 
 	csvpath = os.path.join(dirpath, csvname)
 
-##
- Function: Check dropbox for new image files and if yes, download new images files and redownload CSV
+##Function: Check dropbox for new image files and if yes, download new images files and redownload CSV
 
 # The timestamp of the last image detected by the Master script (type = integer)
 last_image = 20180410175529 # test sample
