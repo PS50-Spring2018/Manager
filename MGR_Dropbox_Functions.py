@@ -9,27 +9,46 @@
 # Change working directory to Dropbox
 
 import os
+import glob
 
 path = '/Users/nicolekim/Dropbox'
 
-dirval = os.getcwd()
-print("Current working directory %s" % dirval)
+dirpath = os.getcwd()
+print("Current working directory %s" % dirpath)
 
 os.chdir(path)
 # Check current working directory.
-dirval = os.getcwd()
+dirpath = os.getcwd()
 
-print("Directory changed successfully %s" % dirsval)
+print("Directory changed successfully %s" % dirpath)
 
-
-
-# Function: Check dropbox for new image files and if yes, download new images files and redownload CSV
-# Webcam interface filename convention: eg 20180410175530 = year, month, date, hour (24 hour), minute, seconds
-last_im = ' '
-
-if 
+testpath = '/Users/nicolekim/Dropbox/20180410175530.npy'
 
 
-# Save to csv file - each row represents a different image and columns contain info on that image
-# Update csv file in real time
+
+## Function: Check dropbox for new image files and if yes, download new images files and redownload CSV
+
+
+# The timestamp of the last image detected by the Master script (type = integer)
+last_image = 20180410175529 # test sample
+
+for file in glob.glob("*.npy"):
+    name = file.split('.') # file is the name of the file, split into timestamp + .npy (type = string)
+    filename = name[0]
+    timestamp = int(filename) 
+    if timestamp > last_image: # is file is more recent than the last image detected by Master script?
+    	# download .npy file
+    	imagearray = file 
+    	# last_im = timestamp # reset the timestamp of the last image
+    	print(imagearray)
+    	
+
+# mastercsv = 'Name of CSV Here' # resave csv as mastercsv (everytime so previous csv file overwritten)
+
+
+
+# Code for seeing whether a file exists, output of os.path.isfile is a boolean
+# val = os.path.isfile('20180410175530.npy') 
+# print(val)
+
 
