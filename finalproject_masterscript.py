@@ -1,4 +1,4 @@
-# import libraries needed
+# import libraries needed for project
 import numpy as np 
 import scipy as sp
 import seaborn as sns 
