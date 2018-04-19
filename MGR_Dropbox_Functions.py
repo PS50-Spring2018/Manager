@@ -10,6 +10,7 @@
 
 import os
 import glob
+import numpy as np
 
 path = '/Users/nicolekim/Dropbox'
 
@@ -22,7 +23,7 @@ dirpath = os.getcwd()
 
 print("Directory changed successfully %s" % dirpath)
 
-testpath = '/Users/nicolekim/Dropbox/20180410175530.npy'
+csvpath = '/Users/nicolekim/Dropbox/CSV-FILE-NAME' ## ADJUST THIS
 
 
 
@@ -38,12 +39,11 @@ for file in glob.glob("*.npy"):
     timestamp = int(filename) 
     if timestamp > last_image: # is file is more recent than the last image detected by Master script?
     	# download .npy file
-    	imagearray = file 
-    	# last_im = timestamp # reset the timestamp of the last image
-    	print(imagearray)
-    	
+    	image_path = os.path.join(dirpath, file)
+    	image_array = np.load(image_path) # the variable image_array contains the np array of all the 
 
-# mastercsv = 'Name of CSV Here' # resave csv as mastercsv (everytime so previous csv file overwritten)
+    	with open('csvpath') as f:
+			mastercsv = 'Name of WebcamTeam CSV Here' # resave csv as mastercsv (everytime so previous csv file overwritten)
 
 
 
