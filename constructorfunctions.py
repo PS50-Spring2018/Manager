@@ -1,5 +1,5 @@
 
-def getmeanRed():
+def getmeanRed(mean_array):
 # have a time-step loop 
  # have an if clause that checks if there's a new file uploaded
  	#if there's a new line, download/access the file/line and into a specific folder
@@ -18,7 +18,7 @@ def getmeanBlue():
  	#if there's a new line, download/access the file/line and into a specific folder
  	 # access the column containing this data (already computed by webcame interface team) within the new line
 
-def getvarianceRed():
+def getvarianceRed(var_array):
 	# have a time-step loop 
 		 # have an if clause that checks if there's a new file uploaded
  			#if there's a new line, download/access the file/line and into a specific folder
@@ -44,7 +44,7 @@ def getImageraw():
 		#checks if there's a new file uploaded to Dropbox
 		  	#if there's a new file, download the file and into a specific folder
 		  	  # obtain data and save it to imagerawdata variable
-		  	  
+
 def getImagecontourdata():
 	# have a time-step loop
 		#checks if there's a new file uploaded to Dropbox
