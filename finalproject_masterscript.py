@@ -7,6 +7,8 @@ import time
 import csv 
 import cv2
 import os
+import glob
+
 
 #Important note: Sublime text doesn't support user input so below are instructions that install some packages that allow for user input function
 # in Sublime press ctrl + shift + P (linux command in ST for 'goto anything').
@@ -48,7 +50,7 @@ from constructorfunctions import *
 
 #create an Image object for each image file downloaded from Dropbox
 imagelist = []
-for file in whateverfolderitis:
+for file in whateverfolderitis: 		#FIX this
 	#open file
 	f = open(filename,'r')
 

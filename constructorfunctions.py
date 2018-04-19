@@ -44,6 +44,7 @@ def getImageraw():
 		#checks if there's a new file uploaded to Dropbox
 		  	#if there's a new file, download the file and into a specific folder
 		  	  # obtain data and save it to imagerawdata variable
+		  	  
 def getImagecontourdata():
 	# have a time-step loop
 		#checks if there's a new file uploaded to Dropbox
