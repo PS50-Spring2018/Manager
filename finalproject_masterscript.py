@@ -24,6 +24,7 @@ total_images = input('How many images would you like to capture in total?')
 print(total_images)
 
 #import Dropbox functions
+from MGR_Dropbox_functions import filecheck
 from constructorfunctions import getImageraw, getImagecontourdata
 #import camera controls
 from CameraOps import stream, snap
@@ -35,6 +36,7 @@ for i in range(0,total_images):
 	snap()		#output of this function is a file saved to dropbox, yes?
 
 	#go ahead and download this from dropbox
+	filecheck()
 	getImageraw()			#where does this save to? need to know in order to implement Image class
 	getImagecontourdata()	#same question as above
 

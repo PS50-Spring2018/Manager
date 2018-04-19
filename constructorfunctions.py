@@ -1,7 +1,11 @@
+#necessary precondition for these functions:
+#from MGR_Dropbox_Functions import filecheck		(already implemented in masterscript)
 
-def getmeanRed(mean_array):
+
+def getmeanRed():
 # have a time-step loop 
  # have an if clause that checks if there's a new file uploaded
+ 	filecheck()
  	#if there's a new line, download/access the file/line and into a specific folder
  	 # access the column containing this data (already computed by webcame interface team) within the new line
 
