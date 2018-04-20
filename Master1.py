@@ -33,10 +33,10 @@ while i==0:
 	flag, output, last_image = checkdropbox(dirpath, csvpath,last_image)
 	# if flag == True:
 		# Data analysis plot function(output) updates the dashboard
+
 	time.sleep(3)
 
 	exit()
-
 
 
 
