@@ -5,3 +5,4 @@ class Experiment(object):
         self.listofimages = listofimages
         self.meanRGB = meanRGB
         self.varianceRGB = varianceRGB
+        self.inputarray = [self.meanRGB, self.varianceRGB, self.listofimages]
