@@ -83,6 +83,6 @@ while i==0:
 
 
 	# Data analysis plot function(output) updates the dashboard
-	time.sleep(3)
+	time.sleep(0.5)
 
 	#exit()
