@@ -3,7 +3,8 @@ import glob
 import numpy as np
 import time
 
-from checkdropbox import checkdropbox
+from checkdropbox import checkdropbox # dropbox function, check for new images, if new, download relevant info
+from dashboard_function import dashboard # Data Analysis dashboard plot function
 
 reaction_id= input("What is the reaction ID?") # by default, user input is a string
 
@@ -28,9 +29,10 @@ last_image = 20180410175529 # test sample, FIX THIS BEFORE RUNNING
 
 i = 0
 while i=0:
+	dashboard()
 	flag, output = checkdropbox()
 	if flag = True:
-		# Data Analysis function(output)
+		# Data analysis plot function(output) updates the dashboard
 	time.sleep(3)
 
 
