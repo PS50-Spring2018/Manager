@@ -35,8 +35,6 @@ last_image = 20180410175529 # test sample
 
 def filecheck():
 	for file in glob.glob("*.npy"):
-    	if 'c' in file:
-        	break
     	name = file.split('.') # file is the name of the file as a list of 2 elements, split into timestamp + .npy (type = str)
     	timestamp_str = name[0]
     	file_c = str(timestamp_str + 'c.npy') # name of image with contour (type = str)
