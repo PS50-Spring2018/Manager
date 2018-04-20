@@ -35,7 +35,3 @@ while i=0:
 	if flag = True:
 		# Data analysis plot function(output) updates the dashboard
 	time.sleep(3)
-
-
-
-
