@@ -2,6 +2,10 @@ import os
 import glob
 import numpy as np
 
+import sys
+sys.path.append('/Users/nicolekim/Desktop/PS50/repo/DataAnalysis')
+from dashboard_function import dashboard # Data Analysis dashboard plot function
+
 def checkdropbox(dirpath,csvpath,last_image):
 
 	# The timestamp of the last image detected by the Master script (type = integer)
