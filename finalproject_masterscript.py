@@ -9,20 +9,13 @@ import cv2
 import os
 import glob
 
+#run "Main" script from webcam interface somehow - or copy/paste their code in here??
 
-#Important note: Sublime text doesn't support user input so below are instructions that install some packages that allow for user input function
-# in Sublime press ctrl + shift + P (linux command in ST for 'goto anything').
-# Type in 'install',
-# click on 'sublime package control: install package'.
-# Then select SublimeREPL. It will install it automatically.
-# To use it go to Tools>sublimerepl>python>python-RUNcurrentfile - this will run the script in a new tab, but with user input
-
-#ask for user input of how often to take images, how many total images
-rate = input('How often (in images/minute) should an image be captured?')
-print(rate)
-total_images = input('How many images would you like to capture in total?')
-print(total_images)
-experimentname = input('Give this experiment a (unique) name.  This will be the name of the eventual file generated.')
+#rate = input('How often (in images/minute) should an image be captured?')
+#print(rate)
+#total_images = input('How many images would you like to capture in total?')
+#print(total_images)
+#experimentname = input('Give this experiment a (unique) name.  This will be the name of the eventual file generated.')
 
 #import Dropbox functions
 from MGR_Dropbox_functions import *			#theoretically these are all incorporated within the next file, but just in case
@@ -80,6 +73,8 @@ experimentname = Experiment(imagelist)
 #call group 3 analysis functions on experiment object - what inputs are they using specifically/what's their syntax?
 	#first import their function
 from PS50DataAnalysis import *
+Initialize()
+Run(experimentname.inputarray)
 	#a - graph of R, G, B vs. iteration (?)
 	#b - actual image
 	#c - avg RGB path, mapped onto color wheel
