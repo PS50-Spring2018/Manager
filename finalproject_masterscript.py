@@ -22,10 +22,10 @@ rate = input('How often (in images/minute) should an image be captured?')
 print(rate)
 total_images = input('How many images would you like to capture in total?')
 print(total_images)
+experimentname = input('Give this experiment a (unique) name.  This will be the name of the eventual file generated.')
 
 #import Dropbox functions
-from MGR_Dropbox_functions import filecheck
-from constructorfunctions import *
+from MGR_Dropbox_functions import *			#theoretically these are all incorporated within the next file, but just in case
 from meanvariancerawcontourimagesfunctions import *
 
 #import camera controls
@@ -37,10 +37,6 @@ for i in range(0,total_images):
 	#take image
 	snap()		#output of this function is a file saved to dropbox, yes?
 
-	#go ahead and download this from dropbox
-	image_array = getrawImage()			
-	contourimage_array = getImagecontourdata()
-
 	#wait the appropriate amount of time before taking the next image
 	time.sleep(60/rate)
 
@@ -48,6 +44,10 @@ for i in range(0,total_images):
 
 #Import image class - file currently called "constructor", may want to rename for clarity
 from constructor import Image
+
+#download files from dropbox - SHOULD THIS BE IN A FOR LOOP??
+getrawImage()			
+getImagecontourdata()
 
 #create an Image object for each image file downloaded from Dropbox
 imagelist = []
@@ -73,7 +73,7 @@ for file in whateverfolderitis: 		#FIX this
 
 #pool images into an experiment object: this will have the inputs for the analysis function as attributes
 from experimentclass import Experiment 
-experimentnamesomehowwhatdowewanttocallthis = Experiment(imagelist)
+experimentname = Experiment(imagelist)
 
 
 
