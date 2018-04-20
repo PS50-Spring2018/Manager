@@ -32,8 +32,8 @@ def getrawImage():
     	if timestamp > last_image: # is file is more recent than the last image detected by Master script?
     	# download .npy file
     		image_path = os.path.join(dirpath, file)
-    		image_array = np.load(image_path) # the variable image_array contains the np array of all the 
-    # shoold be the same each time becase they will just append not over write.
+    		image_array = np.load(image_path)
+    	return image_array
 
 def getImagecontourdata():
 	path = '/Users/nicolekim/Dropbox'
@@ -51,8 +51,8 @@ def getImagecontourdata():
     	if timestamp > last_image: # is file is more recent than the last image detected by Master script?
     	# download .npy file
     		image_path = os.path.join(dirpath, file)
-    		image_array = np.load(image_path) # the variable image_array contains the np array of all the 
-    # shoold be the same each time becase they will just append not over write.
+    		contourimage_array = np.load(image_path) 
+    	return contourimage_array
 
 
 def getMeanVariance():
@@ -67,9 +67,20 @@ def getMeanVariance():
 	with open('csvpath') as f:
 			mastercsv = 'Name of WebcamTeam CSV Here' # resave csv as mastercsv (everytime so previous csv file overwritten)
 			reader = csv.reader(f) #csv.reader(f) takes down each line and makes a list of all the objects inside each line.  
+			meanRGB = []
+			varianceRGB = []
 			for rownumber, rowcontent in enumerate(reader): 
 				lastrownumber = sum(1 for row in fileObject)
 				if rownumber == lastrownumber
 					 meanRGB = rowcontent[2:5]
 					 varianceRGB = rowcontent[5:]
 			return meanRGB, varianceRGB
+
+
+
+# Code for seeing whether a file exists, output of os.path.isfile is a boolean
+# val = os.path.isfile('20180410175530.npy') 
+# print(val)
+#f.close()
+#csv file . 7 colmns . first colum = name . mean r , mean g, mean b, var r, var  g , var b
+
