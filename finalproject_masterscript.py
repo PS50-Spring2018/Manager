@@ -80,6 +80,8 @@ experimentname = Experiment(imagelist)
 #call group 3 analysis functions on experiment object - what inputs are they using specifically/what's their syntax?
 	#first import their function
 from PS50DataAnalysis import *
+Initialize()
+Run(rgb)
 	#a - graph of R, G, B vs. iteration (?)
 	#b - actual image
 	#c - avg RGB path, mapped onto color wheel
