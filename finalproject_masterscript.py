@@ -9,14 +9,6 @@ import cv2
 import os
 import glob
 
-
-#Important note: Sublime text doesn't support user input so below are instructions that install some packages that allow for user input function
-# in Sublime press ctrl + shift + P (linux command in ST for 'goto anything').
-# Type in 'install',
-# click on 'sublime package control: install package'.
-# Then select SublimeREPL. It will install it automatically.
-# To use it go to Tools>sublimerepl>python>python-RUNcurrentfile - this will run the script in a new tab, but with user input
-
 #run "Main" script from webcam interface somehow - or copy/paste their code in here??
 
 #rate = input('How often (in images/minute) should an image be captured?')
