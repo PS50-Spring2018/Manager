@@ -56,8 +56,11 @@ def filecheck():
         	data = templist[-1].split(',') # grab the last line of the csv, split into constitute parts
         	mean_array = [float(data[1]), float(data[2]), float(data[3])] # array of mean RGB values
         	var_array = [float(data[4]), float(data[5]), float(data[6])] # array of variance of RGB values
-        	print(mean_array)
-        	print(var_array)
+        	fulldata = []
+            fulldata.append(mean_array)
+            fulldata.append(var_array)
+            fulldata.append(image_array)
+            fulldata_array = np.array(fulldata)
 
         	mastercsv.close()
         	# reset last_image value to the last image worked with
