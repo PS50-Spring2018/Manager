@@ -5,6 +5,7 @@ import time
 
 from checkdropbox import checkdropbox # dropbox function, check for new images, if new, download relevant info
 from dashboard_function import dashboard # Data Analysis dashboard plot function
+from PS50DataAnalysis import *			# Data analysis functions (Initialize(), Run(rgb))
 
 reaction_id= input("What is the reaction ID?") # by default, user input is a string
 
