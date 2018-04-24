@@ -4,10 +4,14 @@ import numpy as np
 import csv
 
 import sys
-sys.path.append('/Users/nicolekim/Desktop/PS50/repo/DataAnalysis')
+#sys.path.append('/Users/nicolekim/Desktop/PS50/repo/DataAnalysis')
+sys.path.append('../DataAnalysis')
 from dashboard_function import dashboard # Data Analysis dashboard plot function
 
 import time
+
+# CHANGE TO DROPBOX DIRECTORY
+path = '/Users/tim/Google Drive/Teaching/'
 
 def getdropbox():
 	"""Checks dropbox and updates list of timestamps as integers.
@@ -34,7 +38,7 @@ def getdropbox():
 ## Running script 
 reaction_id= input("What is the reaction ID?") # by default, user input is a string
 
-path = str('/Users/nicolekim/Dropbox/' + reaction_id)
+path = path + reaction_id
 
 dirpath = os.getcwd()
 print("Current working directory %s" % dirpath)
@@ -74,8 +78,10 @@ while i==0:
 	variances.append(var_array)
 
 	means_temp = np.array(means)
+	#means_temp = np.array([[94, 110, 2]]) #for testing
 	variances_temp = np.array(variances)
 
+	print('means_temp:', means_temp)
 	dashboard(means_temp, variances_temp, image_array)
 
 	# increment index by 1 
@@ -86,3 +92,7 @@ while i==0:
 	time.sleep(0.5)
 
 	#exit()
+
+	# Testing by Tim - JUST PAUSES PROCESSOR FOR 20s
+	time.sleep(20)
+	break
